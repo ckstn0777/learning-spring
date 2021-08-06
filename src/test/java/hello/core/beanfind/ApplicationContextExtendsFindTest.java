@@ -52,14 +52,14 @@ public class ApplicationContextExtendsFindTest {
         }
     }
 
-    @Test
-    @DisplayName("부모 타입으로 모두 조회하기 - Object")
-    void findBeanByObjectType() {
-        Map<String, DiscountPolicy> beansOfType = ac.getBeansOfType(Object.class);
-        for (String key : beansOfType.keySet()) {
-            System.out.println("key = " + key + " value = " + beansOfType.get(key));
-        }
-    }
+//    @Test
+//    @DisplayName("부모 타입으로 모두 조회하기 - Object")
+//    void findBeanByObjectType() {
+//        Map<String, DiscountPolicy> beansOfType = ac.getBeansOfType(Object.class);
+//        for (String key : beansOfType.keySet()) {
+//            System.out.println("key = " + key + " value = " + beansOfType.get(key));
+//        }
+//    }
 
     @Configuration
     static class TextConfig {
